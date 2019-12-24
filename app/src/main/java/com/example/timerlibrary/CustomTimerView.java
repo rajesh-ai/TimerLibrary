@@ -34,6 +34,7 @@ public class CustomTimerView extends AppCompatTextView
         super(context, attrs, defStyleAttr);
         setFont(context);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TimerView, defStyleAttr, 0);
+        System.out.println("message >>>");
 
         try {
             expiryMessage = a.getString(R.styleable.TimerView_expiry_message);
